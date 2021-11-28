@@ -22,7 +22,34 @@
                             <div class="card-body" style="text-align: center; padding-right: 0%;">
                                 <h5 class="card-title">Already user? Log in to continue</h5>
                                 <br>
-                                <a href="#" class="btn btn-success" style="background-color: rgb(44, 162, 5);">Log in</a>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Log in
+                                </button>
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="color: black;">
+                                <div class="modal-dialog modal-md modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Log in to proceed</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3 row">
+                                            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="password" class="col-sm-2 col-form-label" style="font-size: small;">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="password">
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Log in</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -34,13 +61,50 @@
                             <div class="card-body" style="text-align: center;">
                                 <h5 class="card-title">New user? Create an account to proceed.</h5>
                                 <br>
-                                <a href="#" class="btn btn-primary" >Sign up</a>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                    Sign up
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="color: black;">
+                                    <div class="modal-dialog modal-md modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Create an account</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3 row">
+                                                <label for="name" class="col-sm-2 col-form-label">Name</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="password" class="col-sm-2 col-form-label" style="font-size: small;">Password</label>
+                                                <div class="col-sm-10">
+                                                    <input type="password" class="form-control" id="password">
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Sign up</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
+                    </div> 
                 </div>
             </div>
+        <!-- Button trigger modal -->
+        
     </div>
     </body>
 </html>
